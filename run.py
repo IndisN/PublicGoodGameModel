@@ -5,7 +5,7 @@ from agents import Society
 def main():
     society = Society(start_agent_money=100, start_agents_number=7)
 
-    for i in range(10):
+    for i in range(5):
         society.play_once(agents_per_game=3)
         society.dying(dying_money_border=130)
     for agent in society:
